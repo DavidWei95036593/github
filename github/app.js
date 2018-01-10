@@ -1,5 +1,12 @@
 const math = require("./notes.js");
 const result = math.add(2,3);
+const fs = require('fs');
+//writeFileSync will overwrite the content in the file
+fs.writeFileSync("results.txt","GoodBye");
+//appendFileSync will add content in the file
+fs.appendFileSync("results.txt","How's going");
+//both commands will create a new file if the require file is missing
+
 // console.log(result);
 const person = {
   name : "Will",
